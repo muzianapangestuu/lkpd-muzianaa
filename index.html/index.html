@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD JavaScript - Muziana Pangestu</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>LKPD JavaScript</h1>
+        <h2>String, Number, dan Konversi Data</h2>
+        <p>Nama: Muziana Pangestu</p>
+        <p>Kelas: X PPLG 1</p>
+    </header>
+
+    <section>
+        <h2>A. Aktivitas 1 - Eksperimen 10 + 20</h2>
+
+        <pre><code>let a = "10";
+let b = "20";
+console.log(a + b);</code></pre>
+
+        <div class="jawaban">
+            <b>Output:</b> 1020
+            <p>
+                Hasil tersebut terjadi karena a dan b bertipe
+                String sehingga operator + menggabungkan teks.
+            </p>
+            <p>
+                Variabel a dan b bukan Number, melainkan String.
+            </p>
+            <p>
+                Prediksi benar jika hasil yang diperkirakan adalah 1020.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>B. Aktivitas 2 - Menemukan Tipe Data</h2>
+
+        <pre><code>let nama = "Asep";
+let umur = 16;
+
+console.log(typeof nama);
+console.log(typeof umur);</code></pre>
+
+        <div class="jawaban">
+            <p>Variabel nama: string</p>
+            <p>Variabel umur: number</p>
+            <p>
+                String digunakan untuk teks, sedangkan Number
+                digunakan untuk angka.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>C. Aktivitas 3 - Konversi String menjadi Number</h2>
+
+        <pre><code>let a = "10";
+let b = "20";
+
+let hasil = Number(a) + Number(b);
+
+console.log(hasil);</code></pre>
+
+        <div class="jawaban">
+            Hasil program: 30
+        </div>
+    </section>
+
+    <section>
+        <h2>D. Aktivitas 4 - Program Kasir</h2>
+
+        <pre><code>let harga = Number(prompt("Masukkan harga:"));
+let jumlah = Number(prompt("Masukkan jumlah:"));
+
+let total = harga * jumlah;
+
+console.log("Total belanja = " + total);</code></pre>
+
+        <div class="jawaban">
+            <p>Harga: Rp10.000</p>
+            <p>Jumlah: 3 barang</p>
+            <p>Total seharusnya: Rp30.000</p>
+            <p>Total program: Rp30000</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>E. Tantangan - Program Hitung Nilai</h2>
+
+        <pre><code>let tugas = Number(prompt("Masukkan nilai tugas:"));
+let uts = Number(prompt("Masukkan nilai UTS:"));
+let uas = Number(prompt("Masukkan nilai UAS:"));
+
+let rataRata = (tugas + uts + uas) / 3;
+
+console.log("Rata-rata nilai = " + rataRata);</code></pre>
+
+        <div class="jawaban">
+            <b>Algoritma:</b>
+            <ol>
+                <li>Memasukkan nilai tugas.</li>
+                <li>Memasukkan nilai UTS dan UAS.</li>
+                <li>Mengubah input menjadi Number.</li>
+                <li>Menghitung dan menampilkan rata-rata.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <h2>F. Think - Pair - Share</h2>
+
+        <div class="jawaban">
+            <p>
+                <b>1. Mengapa prompt() perlu dikonversi?</b><br>
+                Karena prompt() menghasilkan String. Number()
+                diperlukan agar input dapat dihitung sebagai angka.
+            </p>
+
+            <p>
+                <b>2. Apa perbedaan "10" dengan 10?</b><br>
+                "10" merupakan String, sedangkan 10 merupakan Number.
+            </p>
+
+            <p>
+                <b>3. Apa yang terjadi jika lupa Number()?</b><br>
+                "10" + "20" menghasilkan "1020", bukan 30.
+            </p>
+
+            <p>
+                <b>Pair:</b> Jawaban dapat sama jika pemahaman tentang
+                tipe data sama. Perbedaan dapat terjadi karena
+                pemahaman yang berbeda.
+            </p>
+
+            <p>
+                <b>Share:</b> Input prompt() harus dikonversi menjadi
+                Number jika ingin digunakan untuk perhitungan.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>G. Refleksi 3-2-1</h2>
+
+        <div class="jawaban">
+            <b>3 hal yang saya pahami:</b>
+            <ol>
+                <li>String digunakan untuk menyimpan teks.</li>
+                <li>Number digunakan untuk menyimpan angka.</li>
+                <li>Number() mengubah teks angka menjadi Number.</li>
+            </ol>
+
+            <b>2 hal yang masih membingungkan:</b>
+            <ol>
+                <li>Menangani input yang bukan angka.</li>
+                <li>Menampilkan hasil dalam format rupiah.</li>
+            </ol>
+
+            <b>1 hal yang ingin saya coba:</b>
+            <p>Membuat program kasir dengan validasi input.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>H. Penilaian Diri</h2>
+
+        <div class="jawaban">
+            <p>☑ Saya dapat membedakan String dan Number.</p>
+            <p>☑ Saya memahami prompt() menghasilkan String.</p>
+            <p>☑ Saya dapat menggunakan Number().</p>
+            <p>☑ Saya dapat menggunakan String().</p>
+            <p>☑ Saya dapat menemukan kesalahan tipe data.</p>
+            <p>☑ Saya dapat membuat program perhitungan sederhana.</p>
+            <small>
+                Sesuaikan penilaian ini dengan kemampuanmu sendiri.
+            </small>
+        </div>
+    </section>
+
+    <section>
+        <h2>I. Demo Kasir Interaktif</h2>
+
+        <label for="harga">Harga barang (Rp):</label>
+        <input type="number" id="harga" min="0"
+               placeholder="Contoh: 10000">
+
+        <label for="jumlah">Jumlah barang:</label>
+        <input type="number" id="jumlah" min="0"
+               placeholder="Contoh: 3">
+
+        <button onclick="hitungTotal()">Hitung Total</button>
+
+        <p id="hasil">Total belanja akan muncul di sini.</p>
+    </section>
+
+    <footer>
+        <p>Muziana Pangestu | X PPLG 1</p>
+        <p>LKPD Dasar-Dasar Pengembangan Perangkat Lunak dan Gim</p>
+    </footer>
+
+    <section>
+        <h2>Hasil Percobaan Saya</h2>
+        <img src="images/foto.jpg" alt="Hasil Percobaan" style="max-width: 100%; height: auto;">
+
+
+
+
+
+    </section>
+
+</div>
+
+<!-- Menghubungkan file JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
